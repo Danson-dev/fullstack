@@ -25,16 +25,16 @@ app.get("/",(req,res)=>{
 })
 mongoose.connect(process.env.MONGODB_URI).then(()=>{
     console.log("connected to the database");
-   app.listen(PORT,()=>{
-    console.log(`Server is running on port: http://localhost:${PORT}`);
+//    app.listen(PORT,()=>{
+//     console.log(`Server is running on port: http://localhost:${PORT}`);
     
-})
+// })
     
 }).catch((error)=>{
     console.error(error);
     
 })
-
+export default app
 /*
 const app=express()
 
