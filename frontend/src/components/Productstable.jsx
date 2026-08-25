@@ -28,7 +28,7 @@ const Productstable = () => {
       </TableHeader>
       <TableBody>
         {products?.map((product)=>(
-            <TableRow key={product.product}>
+            <TableRow key={product._id}>
           <TableCell className="font-medium">{product?.name}</TableCell>
           <TableCell>{ product?.price}</TableCell>
           <TableCell>{ product?.quantity}</TableCell>
